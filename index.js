@@ -92,7 +92,7 @@ const data = [
     },
     {
         merit: "382",
-        name: "Md Elyas Sarker",
+        name: "Md Eleas Sarker",
         gender: "Male",
         roll: " 14",
         nick: "not set"
