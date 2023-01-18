@@ -1,4 +1,15 @@
+/*
 
+TemplateMo 578 First Portfolio
+
+https://templatemo.com/tm-578-first-portfolio
+
+*/
+
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #31beff;
@@ -631,6 +642,7 @@ strong {
   margin-bottom: 24px;
   padding: 40px 40px 40px 40px;
   transition: all 0.5s;
+  max-height: 200px;
 }
 
 .services-thumb-up {
@@ -645,13 +657,13 @@ strong {
 }
 
 .services-thumb:hover .services-icon-wrap {
-  background: var(--secondary-color);
-  border-color: var(--secondary-color);
-  color: var(--white-color);
+  /* background: var(--secondary-color);
+  border-color: var(--secondary-color); */
+  color: var(--secondary-color);
 }
 
 .services-icon-wrap {
-  border: 1px solid var(--border-color);
+  border: 0px solid var(--border-color);
   border-radius: var(--border-radius-small);
   position: absolute;
   bottom: 0;
