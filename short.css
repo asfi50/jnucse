@@ -1,0 +1,93 @@
+body{
+  background-color: #272d3a;
+}
+main {
+  background-color: #272d3a;
+  height: 100vh;
+  font-family: "Avenir", sans-serif;
+}
+
+#header-div {
+  width: 60%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+#content-div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+#input-div {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#output-div {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  background-color: #98cdf8;
+  margin: auto;
+  padding: 5px;
+  border: 3px solid #9dc4ff;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+
+.content-row {
+  display: flex;
+}
+
+input[type=text] {
+  width: 78%;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+
+.button {
+  background-color: #ffd103;
+  color: rgb(25, 3, 3);
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  /* border: 1px solid #540c8b; */
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 5px;
+  display: flex;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: #f8cf54;
+}
+
+#new-url {
+  display: flex;
+  color: black;
+  padding: 5px;
+  font-size: 24px;
+}
+
+#new-url-label {
+  font-size: 18px;
+  display: flex;
+
+}

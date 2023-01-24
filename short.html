@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CseJnu - Link Shortener </title>
+  <link rel='stylesheet' href='https://fonts.gstatic.co'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&amp;display=swap'><link rel="stylesheet" href="./short.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <main>
+    <div id="header-div" class="">
+       <h1 class="">CseJnu Link Shortener</h1>
+     </div>
+
+     <div id="content-div">
+       <div id="input-div">
+         <input type="text" class="text-field content-row" placeholder="Enter your URL..." id="url" name="url" required/>
+         <button type="button" class="content-row button" onclick="makelink()">Short it!</button>
+         <button type="button" class="content-row button" onclick="clearUrl()">Clear</button>
+       
+       </div>
+
+       <div id="output-div">
+         <div class="content-row" id="new-url-label">Your short URL:</div>
+         <div id="new-url" class="content-row"></div>
+         <button type="button" onclick="copyStart()"  class="content-row button">Copy</button>
+       </div>
+     </div>
+
+     </main>
+   
+
+     </body>
+
+<script  src="./short.js"></script>
+
+</body>
+</html>
