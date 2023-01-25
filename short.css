@@ -27,7 +27,7 @@ body {
 #url {
  position: relative;
  max-width: 400px;
- margin: 150px auto 0;
+ margin: 0px auto 0;
 }
 
 #url input {
@@ -224,6 +224,7 @@ body {
   bottom:5px;
   left: 0;
   right: 0;
+  margin: 35px;
   font-size: 14px;
   color: #fff;
   text-decoration: none;
@@ -234,7 +235,9 @@ body {
 #credit:hover {
 	opacity: 1
 }
-#title{
-        opacity: 0.5
-        color: black;
-}
+.headimg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+      }
