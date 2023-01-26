@@ -9,7 +9,7 @@ body {
  font-family: 'Roboto', sans-serif;
  color: #fff;
  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
- background-size: 400% 400%;
+ background-size: 1000% 1000%;
  animation: gradient 15s ease infinite;
 }   
  @keyframes gradient {
@@ -30,13 +30,22 @@ body {
  margin: 0px auto 0;
 }
 
+input[type='text'] {
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    input[type='text'] {
+        font-size: 24px;
+    }
+}
 #url input {
  border: 0;
  border-bottom: 2px solid #000000;
  width: 100%;
- font-size: 30px;
- line-height: 35px;
- height: 70px;
+ /* font-size: 30px; */
+ /* line-height: 35px; */
+ /* height: 70px; */
  text-align: center;
  padding: 10px;
  background: transparent;

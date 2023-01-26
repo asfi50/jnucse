@@ -85,3 +85,39 @@ async function copyToClipboard(text) {
       alert("Error!");
     }
   }
+
+
+  function makeLink() {
+  
+    var longurl = document.getElementById("urlbox").value;
+
+    if (!longurl.startsWith("https://")) {
+        longurl = "https://" + longurl;}
+
+fetch('https://firebasedynamiclinks.googleapis.com/v1/shortLinks?key=AIzaSyBM9KK8llFpxmBEjnFhO35OjYzOuMQpqc8', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+     "longDynamicLink": "https://url.csejnu.com/?link="+longurl,
+   "suffix": {
+     "option": "SHORT"
+   }
+  })
+})
+.then(response => response.json())
+.then(data => {
+    document.getElementById('urlbox').value=data.shortLink;
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+
+}
+var urlbox = document.getElementById("urlbox");
+urlbox.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+		makeLink();
+    }
+});
