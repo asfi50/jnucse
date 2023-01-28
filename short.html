@@ -35,6 +35,13 @@
   <meta property="twitter:description"
     content="CseJnu URL Shortener is the perfect solution for anyone looking to shorten long and unwieldy links. Generate a url.csejnu.com link on the fly.">
   <meta property="twitter:image" content="https://i.ibb.co/nLm6sgM/csejnu-url-shortner-v2.png">
+  
+  <link rel="manifest" href="URLmanifest.json" />
+  <script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('URLsw.js')
+  }
+</script>
 
 
 </head>
