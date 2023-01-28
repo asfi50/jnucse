@@ -1,0 +1,22 @@
+{
+  "background_color": "#ffffff",
+  "description": "CseJnu URL Shortener is the perfect solution for anyone looking to shorten long and unwieldy links. Generate a url.csejnu.com link on the fly. @mtasfi",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "CseJnu Url Shortner",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "CseJnu URL",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "https://i.ibb.co/nLm6sgM/csejnu-url-shortner-v2.png",
+      "type": "image/png",
+      "sizes": "907x651"
+    }
+  ],
+  "shortcuts": []
+}
