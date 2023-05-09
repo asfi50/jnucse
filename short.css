@@ -244,6 +244,22 @@ input[type='text'] {
 #credit:hover {
 	opacity: 1
 }
+#credit2 {
+  position: fixed;
+  bottom:10px;
+  left: 0;
+  right: 0;
+  margin: 35px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+	letter-spacing: 1px;
+	opacity: 0.5;
+}
+#credit2:hover {
+	opacity: 1
+}
 .headimg {
         display: block;
         margin-left: auto;
