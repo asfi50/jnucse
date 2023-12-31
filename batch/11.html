@@ -1,362 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JnU CSE</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="main">
-  <h1>JnU CSE 11th Batch</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JnU CSE</title>
+    <script type="text/javascript" src="student_batch_11.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <!--style.css deleted from this directory and refered from root -->
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="main">
+      <h1>JnU CSE 11th Batch</h1>
 
-  	  <br><div align="center" width=100%>  <audio id="audio" controls autoplay loop>
-  <source src="https://audio.jukehost.co.uk/AECn0RlepRUBaQQQY06xcL3J6ssz3x1p" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio></div>
+      <br />
+      <div align="center" width="100%">
+        <audio id="audio" controls autoplay loop>
+          <source
+            src="https://audio.jukehost.co.uk/AECn0RlepRUBaQQQY06xcL3J6ssz3x1p"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <!-- Edit student_batch_11.json -->
+      <!-- You can do this for rest of the files. -->
+      <div id="data"></div>
+    </div>
 
-  <ul id="grid"  class="cards">
-
-    
-    
- <li id="B190305001" class="cards_item">
+    <h3 class="made_by">© CSE Department of JAGANNATH UNIVERSITY</h3>
+    <script>
+      var students = JSON.parse(data); //getting all students in a list
+      var x = `<ul id="grid" class="cards">
+		`;
+      for (var i = 0; i < students.length; i++) {
+        //itarating the list
+        var stu = students[i];
+        var s =
+          `<li id=` +
+          stu.id +
+          ` class="cards_item" >
 <div class="card">
 	<div class="image-cropper">
-<img src="https://i.ibb.co/ccksc0D/uc-id-1s-Cj8-Ra0-Z2-KSg-a-Er-ILSKq1-Wgt0m3n-SHn.jpg" class="rounded"></div>
+<img src=` +
+          stu.img +
+          ` class="rounded"></div>
 <div class="card_content">
-<h2 class="card_title">Farhana Akter Suci</h2>
-<p class="card_text"><b>School: </b>Noakhali Government Girl's High School <br> <b>College: </b>Noakhali Government College<br> <b>Hometown:</b> Noakhali <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>09 Jul</p>
-<a href="https://www.facebook.com/farhanasuci.fasuci"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305006" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/HBkpgb2/uc-id-19-I2em-BQn-Ml-AEJZ4guzx-Ly-Ylo-ER-WDi-MO.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Shamim</h2>
-<p class="card_text"><b>School: </b>Mahishar Digambari School and College <br> <b>College: </b>Govt. Bangla College<br> <b>Hometown:</b> Shariatpur <br> <b>Blood Group: </b>O+<br> <b>&#x1F382 Birthday: </b>14 Nov</p>
-<a href="https://www.facebook.com/saydulislam.shamim/"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305007" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/8K7hc9W/uc-id-1p-Jj-Vm6bw-Cs-LNF7f-L5-Xg-J4tn033-Qgp-YD.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Sajib Hasan</h2>
-<p class="card_text"><b>School: </b>Gobindahuda High School,Chuadanga. <br> <b>College: </b>Chuadanga Government College. <br> <b>Hometown:</b> Chuadanga <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>26 Oct</p>
-<a href="https://www.facebook.com/mirror36"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B180305013" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/682z3Jy/uc-id-1yo4-Bpic-GAOrq-LVap-EOva-Mx-G0951-T0-OD.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Niloy Datta</h2>
-<p class="card_text"><b>School: </b>Fatulla Pilot High School <br> <b>College: </b>BIRSHRESHTHA NOOR MOHAMMAD PUBLIC COLLEGE<br> <b>Hometown:</b> Narayanganj <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>18 Nov</p>
-<a href="https://www.facebook.com/niloy.datta.5623"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305004" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/PzGVxvx/IMG-20220502-165258.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Rifah Sajida Deya</h2>
-<p class="card_text"><b>School: </b>Sheikhdi Abdullah Molla High School <br> <b>College: </b>Begum Badrunnessa Govt. Girls College <br> <b>Hometown:</b> Dhaka <br> <b>Blood Group: </b>A+<br> <b>&#x1F382 Birthday: </b>11 Oct</p>
-<a href=""style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305031" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/PzGVxvx/IMG-20220502-165258.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Najnin Sultana Shirin </h2>
-<p class="card_text"><b>School: </b>Unknown <br> <b>College: </b>Dhaka City College <br> <b>Hometown:</b> Comilla <br> <b>Blood Group: </b>O+<br> <b>&#x1F382 Birthday: </b>Unknown</p>
-<a href="https://www.facebook.com/najninshirin"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305025" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/xXpDMs5/uc-id-1ochf-R7m-Tcy9rce-GJV91-Mq-Zby-RLZUki-Ye.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Md Swadhin Mia </h2>
-<p class="card_text"><b>School: </b>Dewaner Char High School <br> <b>College: </b>Hazi Abed Ali College <br> <b>Hometown:</b> Narsingdi <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>18 Dec</p>
-<a href="https://www.facebook.com/mdswadhin.ahmed.3"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B180305010" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/LkSCLqm/uc-id-1-KMde-M9j-XU40-a5-L8p2z-Kzw-Wa-Vd-FWU8-AL.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Md Arafat Ali </h2>
-<p class="card_text"><b>School: </b>Shishukoli Model High School. <br> <b>College: </b>Govt. K.C. College Jhenaidah. <br> <b>Hometown:</b> Jhenaidah <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>09 Dec</p>
-<a href=""style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305015" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/6F0HzRD/uc-id-1-j6-Bl2-Cape-Jr0-YJYpv-Bv9a-TOTg-LQd-Ue.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Umme Mehnaz Labiba</h2>
-<p class="card_text"><b>School: </b>Bir Shreshtha Noor Mohammad Public College <br> <b>College: </b>Bir Shreshtha Noor Mohammad Public College <br> <b>Hometown:</b> Dhaka <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>25 Jul</p>
-<a href="https://www.facebook.com/mehnaz.labi"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305012" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/wCVrn7d/uc-id-1-YPd-pelu-Mpg2-EV-Ok-H7-Uw-IX5s-Ieq-Ph-F.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Md.Sharafatullah</h2>
-<p class="card_text"><b>School: </b>Aurabunia Model High School <br> <b>College: </b>Govt. Tofajjol Hossain Manik Mia<br> <b>Hometown:</b> Jhalakathi <br> <b>Blood Group: </b>A+<br> <b>&#x1F382 Birthday: </b>02 Jan</p>
-<a href="https://www.facebook.com/md.sharafat.ullah.37/"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305046" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/PYtSvwY/uc-id-1a5-Kgg4h0-YWXr-MVq-Gjh-GIC55jb-LPbb.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Mashiat Tabassum Khan</h2>
-<p class="card_text"><b>School: </b>BirShreshtha Noor Mohammad Public College <br> <b>College: </b>BirShreshtha Noor Mohammad Public College <br> <b>Hometown:</b> Dhaka <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>02 Dec</p>
-<a href=""style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305043" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/dpvr60r/uc-id-15v-n-Hm-OYke-KMjn-Ivy-Qb7m-NQ9-Tv-Zi-Ly-TH.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Md. Farhan Masud Shohag</h2>
-<p class="card_text"><b>School: </b>Unknown <br> <b>College: </b>Unknown<br> <b>Hometown:</b> Panchagarh <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>Unknown</p>
-<a href="https://www.facebook.com/farhan.shohag0"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305019" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/PzGVxvx/IMG-20220502-165258.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Md. Tanbirul Islam</h2>
-<p class="card_text"><b>School: </b>MUBC <br> <b>College: </b>BCIC College, Mirpur, Dhaka<br> <b>Hometown:</b> Patuakhali <br> <b>Blood Group: </b>A+<br> <b>&#x1F382 Birthday: </b>15 May</p>
-<a href="https://www.facebook.com/tanbir.tanbirulislam.3"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305021" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/fCNZGLf/uc-id-1k-Jl7-Bb0j-BIJOd-Of-LAk-RN-4lma44-zfou.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Asir Shahriar Roudra</h2>
-<p class="card_text"><b>School: </b>Aftab Uddin School & College <br> <b>College: </b>Aftab Uddin School & College<br> <b>Hometown:</b> Bajitpur, Kishoreganj <br> <b>Blood Group: </b>O+<br> <b>&#x1F382 Birthday: </b>Unknown</p>
-<a href="https://www.facebook.com/roudra323"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B160305039 " class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/NrYPjQ7/uc-id-16w7x-Omw-C2qckynoy40j-Xmgvs-Jn2-Ow-Ush.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">MD Rasadul Islam </h2>
-<p class="card_text"><b>School: </b>Motijheel Model High School And College <br> <b>College: </b>Dhaka City College <br> <b>Hometown:</b> Barisal <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>17 Mar</p>
-<a href="https://www.facebook.com/mdrasadul.rana"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305024" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/f1vRcgC/uc-id-10-WIJQg-ELa-FDw8-Bor8rkny-cu-Lavt4k-Um.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Mosammat Shima Aktar</h2>
-<p class="card_text"><b>School: </b>Banani Bidyaniketan school and college <br> <b>College: </b>Shaheed Bir Uttam Lt. Anwar Girls' College <br> <b>Hometown:</b> Mymensingh <br> <b>Blood Group: </b>A+<br> <b>&#x1F382 Birthday: </b>20 Dec</p>
-<a href=""style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305017" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/Q9DXjf5/uc-id-1-Dh-KU-IQ2db-Rm9-Pq15-DI6-Ic-Ui-Qz-Sd7-B4z.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">MD.ABUL BASHER SHUVO</h2>
-<p class="card_text"><b>School: </b>B P A T C SCHOOL AND COLLEGE <br> <b>College: </b>B P A T C SCHOOL AND COLLEGE<br> <b>Hometown:</b> Noakhali <br> <b>Blood Group: </b>A+<br> <b>&#x1F382 Birthday: </b>13 Dec</p>
-<a href=""style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305055" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/R6mdpSJ/uc-id-1-YYM3xu-A0-DZV4z-So-Au-My-RY7t-F9w4-N-b-D.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Mahir Siam</h2>
-<p class="card_text"><b>School: </b>BIAM <br> <b>College: </b>Adamjee Cantonment college <br> <b>Hometown:</b> Mymensingh <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>01 Jan</p>
-<a href=""style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B180305042" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/QKcwf2F/uc-id-1-H6-JV6-F1-X1j-J-3-Pa1-A-3-N703-Uz-XBRGMZn.png" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Sayeed Md. Al-amin</h2>
-<p class="card_text"><b>School: </b>Unknown <br> <b>College: </b>Unknown<br> <b>Hometown:</b> Panchagarh <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>05 Nov</p>
-<a href="https://www.facebook.com/profile.php?id=100011745965516"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305028" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/3kpnNVP/uc-id-1wd-Fn-E5-Ba8-Dxpii92eby-K2-Cj-ED066-SX-7.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Hemel Ahmed</h2>
-<p class="card_text"><b>School: </b>Govt. Saber Mia Jasshim Uddin(S.J) Model High School <br> <b>College: </b>Birshrestha Munshi Abdur Rouf Public College,Peelkhana,Dhaka<br> <b>Hometown:</b> Gopalgonj <br> <b>Blood Group: </b>O+<br> <b>&#x1F382 Birthday: </b>24 Jun</p>
-<a href="https://www.facebook.com/kayom.kamruzzaman,"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305013" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/PzGVxvx/IMG-20220502-165258.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Shabikun Nahar</h2>
-<p class="card_text"><b>School: </b>Ataturk Model High School <br> <b>College: </b>Dr.Mahbubur Rahman Mollah College<br> <b>Hometown:</b> Feni <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>Unknown</p>
-<a href=""style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305042" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/QcvPhMD/uc-id-1-Iyb-FJhxk4-P74-HWCMZp-Km7o-RGLh-EUWate.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Md.Shohrab hossen </h2>
-<p class="card_text"><b>School: </b>Noonkhawa high school <br> <b>College: </b>Cantonment public school and collage saidpur<br> <b>Hometown:</b> Kurigram <br> <b>Blood Group: </b>A+<br> <b>&#x1F382 Birthday: </b>11 Oct</p>
-<a href="https://www.facebook.com/profile.php?id=100082894325500"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305010 " class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/nz1NqLN/uc-id-1jh05-Y8-Vfw55xr-K9z2-IZe-W75-I0-wy-GUn.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Shehad Uj Jahan </h2>
-<p class="card_text"><b>School: </b>Deuty High School and College <br> <b>College: </b>Carmichael College Rangpur <br> <b>Hometown:</b> Rangpur <br> <b>Blood Group: </b>A+<br> <b>&#x1F382 Birthday: </b>18 Aug</p>
-<a href="https://www.facebook.com/shehad.404"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305029" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/4fNFdzt/uc-id-1hr2-Dwv-O2-E3ilik1du17-CRCr-GSehnp9-TR.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Fahim Hasan </h2>
-<p class="card_text"><b>School: </b>Singary Model High School <br> <b>College: </b>Noapara Government College <br> <b>Hometown:</b> Jessore <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>05 Nov</p>
-<a href=""style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305022" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/KwvQR7d/uc-id-1f-SFgl-FWn-N-YZ-2s-Qs-YI7-P6-DWLU0-Luku-L.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Rashedunnabi Rashed</h2>
-<p class="card_text"><b>School: </b>Kadirabad High School <br> <b>College: </b>Rangpur Govt. City College<br> <b>Hometown:</b> Rangpur <br> <b>Blood Group: </b>O+<br> <b>&#x1F382 Birthday: </b>14 Jan</p>
-<a href="https://www.facebook.com/MuhammadRashedunnabiRashed"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305038" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/zHTWcKY/uc-id-1-Kw-OMhfhopwyjt-VN9dye6-R8ga1sx-ET-eb.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Md. Kamran Sharafi</h2>
-<p class="card_text"><b>School: </b>Enayetpur Islamia High School <br> <b>College: </b>Govt. Science Collage <br> <b>Hometown:</b> Enayetpur, Sirajgonj <br> <b>Blood Group: </b>A+<br> <b>&#x1F382 Birthday: </b>29 Aug</p>
-<a href="https://www.facebook.com/kamransharafi420/"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305014" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/6tGzWnL/uc-id-1cn5043d-YEu-Fp-F2-Rcw-Cg-Eh-QZa-Kt-Bllsxn.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Anup Howlader</h2>
-<p class="card_text"><b>School: </b>Bhandaria Bihari Pilot High School <br> <b>College: </b>Amanullah Degree College, Pirojpur<br> <b>Hometown:</b> Bhandaria <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>11 Nov</p>
-<a href="https://www.facebook.com/anup.howlader.188"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="b190305035" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/0KPncLj/uc-id-11-REbrv-WS-Llf6-Xc-ZWckutxwr8-Fn-Cm-C0s.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Md. Sakibul Islam</h2>
-<p class="card_text"><b>School: </b>B.G.D ML High School <br> <b>College: </b>Natunhat Public College<br> <b>Hometown:</b> Jashore,Bangladesh <br> <b>Blood Group: </b>A+<br> <b>&#x1F382 Birthday: </b>11 Jun</p>
-<a href="https://www.facebook.com/mdsakibul.islam.562/"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305041" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/1fBg93c/uc-id-1grm-No2-G8g-Hn-Ov-ED1-T5-e-Torc-Scgjp-GZd.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Tawhid Mirza Mahib</h2>
-<p class="card_text"><b>School: </b>Armanitola Govt. High School <br> <b>College: </b>Engineering University School & College<br> <b>Hometown:</b> Dhaka <br> <b>Blood Group: </b>AB+<br> <b>&#x1F382 Birthday: </b>19 Sep</p>
-<a href="https://www.facebook.com/mahib.tawhid"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305009" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/VDQL1LN/uc-id-1-GG-Ug-OHetm-Kq-Xz9po0-ZGas-Fq72-Yz-KIc.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Jahangir Hossain</h2>
-<p class="card_text"><b>School: </b>Tulatoly High School <br> <b>College: </b>Alhaj Noor Mia College, Chauddagram<br> <b>Hometown:</b> Cumilla <br> <b>Blood Group: </b>O+<br> <b>&#x1F382 Birthday: </b>21 Nov</p>
-<a href="facebook.com/jhm69"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305011" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/pbrzRcq/uc-id-1api-ETplk-DT2-Lio-SAJPzt-N58-G0-Zgytq-Q.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">MD. Farhan Ishtiyak Sezar</h2>
-<p class="card_text"><b>School: </b>Gaibandha Sadar Upazilla Model School & College <br> <b>College: </b>Gaibandha Govt. College <br> <b>Hometown:</b> Gaibandha <br> <b>Blood Group: </b>AB+<br> <b>&#x1F382 Birthday: </b>01 Jan</p>
-<a href="https://www.facebook.com/farhan.ishtiyak.92"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
-</div>
-</div>
-</li><li id="B190305051" class="cards_item">
-<div class="card">
-	<div class="image-cropper">
-<img src="https://i.ibb.co/FDX5j40/uc-id-1-UXA-x-Wa-B3-MZb-FOGBTrhk-LRHDBq-WUu-H.jpg" class="rounded"></div>
-<div class="card_content">
-<h2 class="card_title">Tanmay Maitra Tanu</h2>
-<p class="card_text"><b>School: </b>Narail Government High School <br> <b>College: </b>Rajuk Uttara Model College <br> <b>Hometown:</b> Narail <br> <b>Blood Group: </b>B+<br> <b>&#x1F382 Birthday: </b>11 Apr</p>
-<a href="https://www.facebook.com/tonmoymartia.tanu"style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
+<h2 class="card_title"> ` +
+          stu.name +
+          ` </h2>
+<p class="card_text"><b>School: </b>` +
+          stu.school +
+          ` <br> <b>College: </b>` +
+          stu.college +
+          `<br> <b>Hometown:</b>` +
+          stu.address +
+          `<br> <b>Blood Group: </b>` +
+          stu.blood +
+          `<br> <b>&#x1F382 Birthday: </b>` +
+          stu.dob +
+          `</p>
+<a href=` +
+          stu.link +
+          ` style="text-decoration: none;"><button class="btn card_btn">Follow Me!</button></a>
 </div>
 </div>
 </li>
+`;
 
-   
-   
-    
-    
-  </ul>
-</div>
+        x += s;
+      }
+      x += `</ul>`;
+      document.getElementById("data").innerHTML = x;
+    </script>
 
-
-<h3 class="made_by">© CSE Department of JAGANNATH UNIVERSITY </h3>
-
-
-
-<!-- partial -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'></script><script  src="script.js"></script>
-
-</body>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../script.js"></script>
+    <!--script.js deleted from this directory and refered from root -->
+  </body>
 </html>
