@@ -1,24 +1,28 @@
 <html>
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger intent="WELCOME" chat-title="Medha-AI" agent-id="65da5da1-f708-4623-997f-158f9156f186" language-code="en"></df-messenger>
-
-    <script>
-        function openChat() {
-            var dfMessenger = document.querySelector("df-messenger");
-            if (dfMessenger.shadowRoot) {
-                var shadowRoot = dfMessenger.shadowRoot;
-                var div = shadowRoot.querySelector(".df-chat-icon");
-                console.log(div);
-                // add a png image to the div
-                div.innerHTML =
-                    '<img src="https://png.pngtree.com/png-vector/20230321/ourmid/pngtree-artificial-intelligence-robot-illustration-png-image_6654937.png" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px; margin-bottom: 10px;">';
-                shadowRoot.querySelector(".df-chat-icon").click();
-                // make the cursor focus on the input field
-                shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector("input").focus();
-            } else {
-                setTimeout(openChat, 50);
+    <head>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    </head>
+    <body>
+        <df-messenger intent="WELCOME" chat-title="Medha-AI" agent-id="65da5da1-f708-4623-997f-158f9156f186" language-code="en"></df-messenger>
+        <script>
+            function openChat() {
+                var dfMessenger = document.querySelector("df-messenger");
+                if (dfMessenger.shadowRoot) {
+                    var shadowRoot = dfMessenger.shadowRoot;
+                    var div = shadowRoot.querySelector(".df-chat-icon");
+                    console.log(div);
+                    // add a png image to the div
+                    div.innerHTML =
+                        '<img src="https://png.pngtree.com/png-vector/20230321/ourmid/pngtree-artificial-intelligence-robot-illustration-png-image_6654937.png" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px; margin-bottom: 10px;">';
+                    shadowRoot.querySelector(".df-chat-icon").click();
+                    // make the cursor focus on the input field
+                    shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector("input").focus();
+                    shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-titlebar").shadowRoot.querySelector(".title-wrapper").style.display = "none";
+                } else {
+                    setTimeout(openChat, 50);
+                }
             }
-        }
-        openChat();
-    </script>
+            openChat();
+        </script>
+    </body>
 </html>
